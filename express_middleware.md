@@ -1,0 +1,24 @@
+
+## Middleware ##
+
+app.use gets request but does not move to next response on until next is used, if next is ommitted it just stops and onlg sends hello to terminal and not testest to browser
+
+```
+const express = require('express');
+
+const app = express();
+
+app.use((req, res, next) => {
+  consol.log('<h1>Hello</h1>')
+  next();
+})
+
+
+app.get('/', (req, res) =>{
+	res.send("testtest");
+});
+
+app.listen(3000);
+```
+
+This called middleware.
