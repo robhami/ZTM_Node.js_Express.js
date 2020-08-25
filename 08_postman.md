@@ -79,3 +79,26 @@ app.post('/profile', (req, res) =>{
 
 app.listen(3000);
 ```
+
+You will use data type #2 above if use a server for a form that gets submitted. There is also JSON under Raw. 
+Need to add line of code to tell bodyParser to accept JSON:
+```
+app.use(bodyParser.urlencoded({extended: false}))
+** app.use(bodyParser.json()); **
+
+```
+Can also send success message: 
+```
+app.post('/profile', (req, res) =>{
+	console.log(req.body);
+	res.send('Success');
+	const user ={
+
+		name: 'Sally',
+		hobby: 'soccer'
+	}
+
+	res.send(user);
+
+});
+```
