@@ -1,3 +1,5 @@
+
+### readFile ###
 FS stands for file system allows you to access our file system. Below imports fs module that comes with node. The FS module has a method -readfile(), that reads a file. First parameter is path to the file. Therefore need to create file call hello.txt in same folder and "hello" to it. Also need to do some encoding to console.log by adding .toString() to data. This will run utf8 encoding by default
 
 
@@ -73,3 +75,22 @@ console.log('bye gone')
 
 })
 
+### Santas helper challenge ###
+
+Use console.time, to see hwo long each call takes. Need a console.timeEand with same value in brackets as console.time to track time between two console entries.  
+
+e.g. 
+
+```
+const fs = require('fs');
+fs.readFile('./hello.txt',(err,data) => {
+  console.time('time taken');
+  if(err) {
+    console.log("error")
+  }
+  console.timeEnd('time taken');
+  console.log(data.toString());
+  
+})	
+
+```
