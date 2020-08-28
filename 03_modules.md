@@ -4,6 +4,7 @@ Create script2.js file and add:
 const largeNumber = 356;
 
 export default largeNumber;
+
 ```
 Then in script.js:
 
@@ -17,10 +18,11 @@ setTimeout(()=> {
 	console.log(a + b);
 	console.log(__dirname);
 }, 3000)
+
 ```
 This throws an error because ES6 import statements is not implemented in node.js yet. There are work arounds to this, you can add packages. There is another way: 
 
-```
+
 
 In script.js set largeNumber using require path :
 
@@ -70,7 +72,6 @@ $ node script.js
 361
 ```
 Can change variable name and it still works: 
-```
 ```
 const c = require ('./script2.js')
 
