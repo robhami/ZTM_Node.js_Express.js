@@ -38,6 +38,8 @@ const server = http.createServer((request, response)=> {
 
 server.listen(3000); 
 ```
+Any time we try to connect we have a  request and response parameter we can use. 
+
 Above will show hello in browser when you run server.js.
 
 Can also get information about the request: 
@@ -75,6 +77,14 @@ headers {
 method GET
 url /
 ```
+If add text to url, it will return that text:
+```
+http://localhost:3000/profile123
+
+url /profile123
+
+```
+
 To send JSON response creatye object and use JSON.stringify:
 ```
 const http = require ('http');
@@ -95,3 +105,5 @@ const server = http.createServer((request, response)=> {
 server.listen(3000);
 ```
 Will run json.parse() on front-end to convert it to a JS object.
+
+Better to use express.js with node.js.
