@@ -10,6 +10,11 @@ console.log(c);
 ```
 This allows you to read file system.
 
+Also have http module for transferring data.
+```
+const c =require('http');
+
+```
 initiate npm to get json file: 
 
 ```gitattributes
