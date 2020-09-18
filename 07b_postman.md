@@ -31,15 +31,24 @@ app.listen(3000);
 
 Then enter localhost:3000/profile into Postman and do a GET request. This returns send value- "getting profile". 
 
-### POST ###
 
-can select options by clicking on body:  
+### POST ###
+Enter localhost:3000/profile into Postman and do a POST request. This returns send value user values to body i.e.:
+```
+{
+	name: 'Sally',
+	hobby: 'soccer'
+	}.
+```	
+
+Can select options by clicking on body:  
 1. form-data
 2. x-www.form-urlencoded
 3. raw
 4. binary
 
-If add a Key and value req.body doesnt do anything because you need middleware-it only gives undefined in terminal. 
+If add a Key and value (did this under #2 above) req.body doesnt do anything because you need middleware-it only gives undefined in terminal. 
+If you want to access req.body you need to use middleware called:
 
 ### Body-Parser ###
 
@@ -80,7 +89,12 @@ app.post('/profile', (req, res) =>{
 app.listen(3000);
 ```
 
-You will use data type #2 above if use a server for a form that gets submitted. There is also JSON under Raw. 
+You will use data type #2 above if use a server for a form that gets submitted. Also thi is why urlencoded is added to:
+```
+app.use(bodyParser.urlencoded({extended: false}))
+```
+
+There is also JSON under Raw. 
 Need to add line of code to tell bodyParser to accept JSON:
 ```
 app.use(bodyParser.urlencoded({extended: false}))
