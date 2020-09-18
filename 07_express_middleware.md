@@ -1,7 +1,7 @@
 
 ## Middleware ##
-
-app.use gets request but does not move to next response on until next is used, if next is ommitted it just stops and onlg sends hello to terminal and not testest to browser
+Request passes through the Middleware code then onto next bit of code. Middleware can do something to code to perhaps make it easier to work with. 
+app.use gets request but does not move to next response on until next is used, if next is ommitted it just stops and only sends hello to terminal and not testest to browser
 
 ```
 const express = require('express');
