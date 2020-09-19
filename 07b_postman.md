@@ -124,17 +124,13 @@ This will return the following in console:
 ```
 { user: 'Jenny', hobby: 'tennis' }
 ```
-Can also send success message: 
+
+So we could add the user to database (then call it with req.body - below its just console.logged from the Postman body of /profile). Then send success message to lower body  
 ```
 app.post('/profile', (req, res) =>{
 	console.log(req.body);
 	res.send('Success');
-	const user ={
-		name: 'Sally',
-		hobby: 'soccer'
-	}
-
-	res.send(user);
-
 });
 ```
+This returns a Success message in lower pane of Postman. 
+![Alt Text](https://github.com/robhami/ZTM_Node.js_Express.js/blob/master/images/success.PNG)
