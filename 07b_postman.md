@@ -3,9 +3,10 @@
 Go to: 
 https://www.postman.com/
 
+### GET request Postman ###
+
 Can add get request to where we have server running from Postman. 
 
-### GET request Postman ###
 NPM start the following code/server:
 
 ```
@@ -99,11 +100,13 @@ Go to Postman and do Post
 
 ![Alt Text](https://github.com/robhami/ZTM_Node.js_Express.js/blob/master/images/postman_post.PNG)
 
-
-
-
+This will return entered values in console:
+```
+[Object: null prototype] { name: 'Rob' }
+```
 
 There is also JSON under Raw. 
+
 Need to add line of code to tell bodyParser to accept JSON:
 ```
 app.use(bodyParser.urlencoded({extended: false}))
