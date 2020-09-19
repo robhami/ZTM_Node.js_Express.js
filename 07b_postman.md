@@ -3,7 +3,7 @@
 Go to: 
 https://www.postman.com/
 
-### GET request Postman ###
+### GET request Postman from code ###
 
 Can add get request to where we have server running from Postman. 
 
@@ -37,25 +37,20 @@ Then enter localhost:3000/profile into Postman and do a GET request. This return
 
 ![Alt Text](https://github.com/robhami/ZTM_Node.js_Express.js/blob/master/images/postman_get.PNG)
 
-### POST request Postman ###
+### POST request Postman from code ###
 Enter localhost:3000/profile into Postman and do a POST request. This returns send value user values to body lower pane i.e.:
 ![Alt Text](https://github.com/robhami/ZTM_Node.js_Express.js/blob/master/images/postman_post_first.PNG)
-```
-{
-   name: 'Sally',
-   hobby: 'soccer'
-}.
-```	
 
-Can select options by clicking on body:  
+
+Can select options by clicking on body in upper pane:  
 1. form-data
 2. x-www.form-urlencoded
 3. raw
 4. binary
 
-You will use data type #2 above if use a server for a form that gets submitted.
+You will use data type #2 above if use a server for a form that gets submitted in HTML.
 
-If add a Key and value (did this under #2 above) req.body doesnt do anything because you need middleware-it only gives undefined in terminal. 
+If add a Key and value (did this under #2 above) req.body doesnt do anything when you POST because you need middleware- it only gives undefined in terminal. 
 If you want to access req.body you need to use middleware called:
 
 #### Body-Parser ####
@@ -98,6 +93,10 @@ Also need to pass it a parameter: {extended: false}. There is a link that explai
 
 ADD LINK 
 
+### POST request Postman from Postman body ###
+
+#### urlencoded ####
+
 Go to Postman and do Post 
 
 ![Alt Text](https://github.com/robhami/ZTM_Node.js_Express.js/blob/master/images/postman_post.PNG)
@@ -106,6 +105,8 @@ This will return entered values in console:
 ```
 [Object: null prototype] { name: 'Rob' }
 ```
+
+#### JSON ####
 
 There is also JSON under Raw. 
 
