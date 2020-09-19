@@ -1,11 +1,11 @@
 A REST API defines a set of functions which developers can perform requests and receive responses via HTTP protocol (e.g. GET, POST, PUT, DELETE).
 
-REST APIs are stateless- meaning calls can be made indepedantly of one another. Each call contains all the data necessary to complete the call successfully. 
+REST APIs are stateless- meaning calls can be made indepedently of one another. Each call contains all the data necessary to complete the call successfully. 
 
 A GET request will have a request object that we receive. A request object can have a few things: 
 
 ### req.query ###
-Add console.log(req.query) to standard GET request shwon before:
+Add console.log(req.query) to standard GET request shown before:
 
 ```
 const express = require('express');
