@@ -1,8 +1,11 @@
+### Install Postman ###
+
 Go to: 
 https://www.postman.com/
 
 Can add get request to where we have server running from Postman. 
 
+### GET request Postman ###
 NPM start the following code/server:
 
 ```
@@ -32,7 +35,7 @@ app.listen(3000);
 Then enter localhost:3000/profile into Postman and do a GET request. This returns send value- "getting profile". 
 
 
-### POST ###
+### POST request Postman ###
 Enter localhost:3000/profile into Postman and do a POST request. This returns send value user values to body i.e.:
 ```
 {
@@ -100,7 +103,7 @@ ADD LINK
 
 Go to Postman and do Post 
 
-![Alt Text](https://github.com/robhami/ZTM_databases/blob/master/images/psotman_post_request.PNG)
+![Alt Text](https://github.com/robhami/ZTM_databases/blob/master/images/psotman_post.PNG)
 
 
 
