@@ -113,13 +113,20 @@ app.use(bodyParser.urlencoded({extended: false}))
 ** app.use(bodyParser.json()); **
 
 ```
+Enter new user into upper pane of Postman:
+![Alt Text](https://github.com/robhami/ZTM_Node.js_Express.js/blob/master/images/postman_post_JSON.PNG)
+
+
+This will return the following in console: 
+```
+{ user: 'Jenny', hobby: 'tennis' }
+```
 Can also send success message: 
 ```
 app.post('/profile', (req, res) =>{
 	console.log(req.body);
 	res.send('Success');
 	const user ={
-
 		name: 'Sally',
 		hobby: 'soccer'
 	}
