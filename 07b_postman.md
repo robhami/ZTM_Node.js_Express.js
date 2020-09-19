@@ -103,7 +103,7 @@ ADD LINK
 
 Go to Postman and do Post 
 
-![Alt Text](https://github.com/robhami/ZTM_databases/blob/master/images/psotman_post.PNG)
+![Alt Text](https://github.com/robhami/ZTM_databases/blob/master/images/postman_post.PNG)
 
 
 
