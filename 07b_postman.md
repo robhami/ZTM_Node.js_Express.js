@@ -34,15 +34,15 @@ app.listen(3000);
 ```
 
 Then enter localhost:3000/profile into Postman and do a GET request. This returns send value- "getting profile". 
-
+![Alt Text](https://github.com/robhami/ZTM_Node.js_Express.js/blob/master/images/postman_get.PNG)
 
 ### POST request Postman ###
-Enter localhost:3000/profile into Postman and do a POST request. This returns send value user values to body i.e.:
+Enter localhost:3000/profile into Postman and do a POST request. This returns send value user values to body lower pane i.e.:
 ```
 {
-	name: 'Sally',
-	hobby: 'soccer'
-	}.
+   name: 'Sally',
+   hobby: 'soccer'
+}.
 ```	
 
 Can select options by clicking on body:  
