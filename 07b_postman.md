@@ -79,21 +79,15 @@ app.get('/profile', (req, res) =>{
 app.post('/profile', (req, res) =>{
 	console.log(req.body);
 	const user ={
-
 		name: 'Sally',
 		hobby: 'soccer'
-
 	}
-
-
-
 	res.send(user);
-
 });
 
 app.listen(3000);
 ```
- Also this is why urlencoded is added to:
+urlencoded is added as this is the data selected in Postman (see #2 above).
 ```
 app.use(bodyParser.urlencoded({extended: false}))
 ```
