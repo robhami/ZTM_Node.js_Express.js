@@ -134,3 +134,9 @@ app.post('/profile', (req, res) =>{
 ```
 This returns a Success message in lower pane of Postman. 
 ![Alt Text](https://github.com/robhami/ZTM_Node.js_Express.js/blob/master/images/success.PNG)
+
+### PUT ###
+Can use PUT to update e.g. if you want Jenny to have a different hobby
+
+### DELETE ###
+If you want to delete user. 
