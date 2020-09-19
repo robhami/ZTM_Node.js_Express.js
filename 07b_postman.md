@@ -47,10 +47,12 @@ Can select options by clicking on body:
 3. raw
 4. binary
 
+You will use data type #2 above if use a server for a form that gets submitted.
+
 If add a Key and value (did this under #2 above) req.body doesnt do anything because you need middleware-it only gives undefined in terminal. 
 If you want to access req.body you need to use middleware called:
 
-### Body-Parser ###
+#### Body-Parser ####
 
 npm install body-parser
 
@@ -88,11 +90,21 @@ app.post('/profile', (req, res) =>{
 
 app.listen(3000);
 ```
-
-You will use data type #2 above if use a server for a form that gets submitted. Also thi is why urlencoded is added to:
+ Also this is why urlencoded is added to:
 ```
 app.use(bodyParser.urlencoded({extended: false}))
 ```
+Also need to pass it a parameter: {extended: false}. There is a link that explain more on this:
+
+ADD LINK 
+
+Go to Postman and do Post 
+
+
+
+
+
+
 
 There is also JSON under Raw. 
 Need to add line of code to tell bodyParser to accept JSON:
