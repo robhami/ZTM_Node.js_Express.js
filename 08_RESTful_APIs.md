@@ -77,7 +77,7 @@ This will return the following in terminal:
 
 { id: '1234' }
 
-### res ###
+### res.status ###
 
 Add code: 
 ```
@@ -89,7 +89,7 @@ app.get('/:id', (req, res) =>{
 app.listen(3000);
 ```
 
-Then send in Postman. It returns 404 and not found in body in Postman. Then if refresh browser it shows 404 in network tab. 
+Then send in Postman. It returns 404 and not found in body in Postman. Then if refresh browser it shows 404 in network tab. Also shows in browser text.
 
 ### Serving static assets/files ?? ###
 
@@ -122,5 +122,7 @@ app.use(express.static(__dirname + '/Public'))
 app.listen(3000);
 
 ```
-This will return its working in browser. It network tab it has details. If did .css it would load it. 
+This will return its working in browser. It network tab it has details -200 request under localhost with text/html content type in headers and the html code under response. If did .css it would load it in response. 
+
+If we have API that we want to interact with we do GET, POST, PUT etc thats were we start using the methods we learned
 
