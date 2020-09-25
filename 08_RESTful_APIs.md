@@ -1,6 +1,8 @@
-A REST API defines a set of functions which developers can perform requests and receive responses via HTTP protocol (e.g. GET, POST, PUT, DELETE).
+## RESTful APIs ##
 
-REST APIs are stateless- meaning calls can be made indepedently of one another. Each call contains all the data necessary to complete the call successfully. 
+A RESTful API defines a set of functions which developers can perform requests and receive responses via HTTP protocol (e.g. GET, POST, PUT, DELETE).
+
+RESTful APIs are stateless- meaning calls can be made indepedently of one another. Each call contains all the data necessary to complete the call successfully. 
 
 A GET request will have a request object that we receive. A request object can have a few things: 
 
